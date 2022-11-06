@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+header {
+  width: 1600px;
+  background-color: #000;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  width: 1160px;
+  justify-content: space-between;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+.navbar nav {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar nav .logo {
+  text-align: center;
+}
+
+.navbar nav ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+  padding: 0 25px;
+  font-size: 24px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 19px;
+}
+
+.navbar ul li a:hover {
+  color: #fb8634;
+  transition: all 0.4s linear;
+}
+
+.navbar ul li .active {
+  color: #fb8634;
+}
+
+.navbar .covered h4 a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+
+/* Header Styles */
+
+/* Main_page style  */
+.main-page {
+  background-image: url("../../images/Panda.png");
+  height: 390px;
+  width: 1600px;
+  left: 0px;
+  right: 0px;
+  top: 66px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* Main_page style ended */
+
+/* Donate info */
+.bg-donate {
+  width: 1600px;
+  background: linear-gradient(
+      315.75deg,
+      rgba(254, 210, 144, 0.7) 30.06%,
+      #febdab 100.95%,
+      rgba(254, 210, 144, 0.7) 106.36%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    ),
+    linear-gradient(
+      315.75deg,
+      rgba(254, 189, 171, 0.74) 30.06%,
+      rgba(243, 169, 248, 0.66) 50.74%,
+      #e0d8f0 80.49%,
+      #eaf7fe 127.9%,
+      #eaf7fe 149.54%
+    );
+}
+
+.main-info {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+.main-info h1 {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 300;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.main-info p {
+  padding: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
+.main-info h3 {
+  padding: 15px 0px;
+  color: #fe9013;
+  font-size: 30px;
+  font-weight: 300;
+}
+
+/* donate section */
+
+.bg-donate .donate1 {
+  width: 1160px;
+  margin: 20px auto 0px auto;
+  background-color: #ffe9d3;
+  border-radius: 10px;
+  padding: 20px 80px;
+}
+
+.bg-donate .donate1 h2 {
+  text-align: center;
+  padding: 30px 0;
+  color: #f28435;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.bg-donate .donate1 p {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(101, 101, 101);
+}
+
+.bg-donate .donate1 .donate-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+
+.bg-donate .donate1 .donate-details .pandadiet {
+  width: 590px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.donate1 .donate-details .pandadiet .diet-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate1 .donate-details .pandadiet .diet-date h4 {
+  font-size: 72px;
+}
+
+.donate1 .donate-details .pandadiet .diet-date p {
+  font-size: 17px;
+  font-weight: 450;
+}
+
+.donate1 .donate-details .pandadiet .times {
+  font-size: 40px;
+}
+
+/* Panda Input ***************************************/
+
+.donate1 .donate-details .input-radio-line {
+  width: 100%;
+}
+
+.donate1 .donate-details .input-radio-line .all-radios {
+  margin: 60px;
+}
+
+.donate1 .donate-details .input-radio-line .all-radios h3 {
+  font-size: 16px;
+  padding: 10px 0;
+}
+
+.donate1 .donate-details .input-radio-line .all-radios form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.donate1 .donate-details .input-radio-line .all-radios form .radio-input {
+  width: 100%;
+  background-color: rgb(74, 73, 73);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 40px;
+  border-radius: 4px;
+}
+
+.input-radio-line .all-radios form .radio-line {
+  border: 0.9px solid rgb(165, 163, 163);
+  width: 50%;
+}
+
+.input-radio-line .all-radios form .radio-input input {
+  appearance: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  padding: 6px;
+  background-color: yellow;
+}
+
+.input-radio-line .all-radios form .radio-input input:hover {
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.input-radio-line .all-radios form .radio-input input:checked {
+  border: 2px solid orange;
+  background: transparent;
+  transition: all 0.2s linear;
+}
+
+.donate1 .donate-details .input-radio-line .all-radios form .radio-label {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  margin-top: 10px;
+}
+
+.donate1 .donate-details .input-radio-line .all-radios form .radio-label label {
+  font-weight: 600;
+}
+
+.donate1 .donate-details form .amount-input input {
+  background: transparent;
+  border: 2px solid rgb(168, 167, 167);
+  outline: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: rgb(168, 167, 167);
+  border-radius: 3px;
+}
+
+.donate1 .donate-details form .amount-input input::placeholder {
+  color: rgb(168, 167, 167);
+}
+
+.donate1 .donate-details form .amount-input {
+  position: relative;
+}
+
+.donate1 .donate-details form .amount-input i {
+  position: absolute;
+  top: 30%;
+  right: 4%;
+  color: rgb(168, 167, 167);
+}
+
+.donate1 .donate-details form .radios {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px 0;
+}
+
+.donate1 .donate-details form .radios input {
+  appearance: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  padding: 6px;
+  border: 1px solid orange;
+  margin-right: 5px;
+}
+
+.donate1 .donate-details form .radios input:hover {
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.donate1 .donate-details form .radios input:checked {
+  border: 2px solid rgb(255, 106, 0);
+  transition: all 0.2s linear;
+}
+
+.donate1 .donate-details .donate-btn button {
+  padding: 15px 55px;
+  font-weight: 545;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  margin-top: 30px;
+  border-radius: 20px;
+  background-color: #fb8634;
+  color: #fff;
+}
+
+.donate1 .donate-details button:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: all 0.3s linear;
+}
+
+.donate1 .donate-details .note {
+  padding-top: 30px;
+}
+
+.donate1 .donate-details .note p {
+  font-size: 15px;
+}
+
+/* Footer Section Styles */
+footer {
+  background: #000;
+  width: 1600px;
+  padding: 30px;
+}
+
+footer .footer {
+  width: 1160px;
+  margin: 20px auto;
+}
+
+footer .footer .footer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.footer .footer-head .footer-input h2 {
+  font-size: 22px;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.footer .footer-head .footer-input form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footer .footer-head .footer-input input {
+  background: transparent;
+  border: 1px solid rgb(248, 120, 8);
+  padding: 6px 8px;
+  margin: 10px 0;
+  border-radius: 3px;
+  outline: none;
+  color: rgb(184, 180, 180);
+}
+
+.footer .footer-head .footer-input button {
+  font-size: 16px;
+  color: lightgreen;
+  padding: 3.5px 15px;
+  margin-left: 5px;
+  border-radius: 3px;
+  border: 1px solid lightgreen;
+}
+
+.footer .footer-head .footer-input button:hover {
+  cursor: pointer;
+  transition: all 0.3s linear;
+  transform: translateY(-2px);
+}
+
+.footer .footer-btn {
+  margin-top: 20px;
+}
+
+.footer .footer-btn button {
+  padding: 12px 32px;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  outline: none;
+  margin-top: 30px;
+  border-radius: 4px;
+  background-color: #fb8634;
+}
+
+.footer .footer-btn button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer .footer-btn button:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: all 0.3s linear;
+}
+
+.footer .footer-networks {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 45px 0 20px 0;
+}
+
+.footer .footer-networks .networks {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer .footer-networks .networks a {
+  color: rgb(186, 183, 183);
+  text-decoration: none;
+  padding: 0px 10px;
+  text-transform: capitalize;
+}
+
+.footer .footer-networks .networks a:nth-child(2) {
+  margin: 6px 0;
+}
+
+.footer .footer-networks .networks a:nth-child(4) {
+  margin-top: 6px;
+}
+
+.footer .footer-networks .networks a i {
+  margin-right: 15px;
+  color: rgb(211, 207, 207);
+  background-color: rgb(83, 83, 83);
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  font-size: 17px;
+  padding: 4px;
+  text-align: center;
+}
+
+.footer .footer-networks .networks a i:hover {
+  border: 1.5px solid greenyellow;
+  transition: all 0.4s linear;
+}
+
+.footer .footer-networks .menu ul {
+  display: flex;
+}
+
+.footer .footer-networks .menu ul li {
+  list-style: none;
+  padding: 0px 20px;
+}
+
+.footer .footer-networks .menu ul li a {
+  text-decoration: none;
+  color: rgb(186, 183, 183);
+}
+
+.footer .footer-networks .menu ul li .active {
+  color: #fb8634;
+}
+
+.footer .footer-networks .menu ul li a:hover {
+  color: #fb8634;
+  transition: all 0.3s linear;
+}
+
+.footer .footer-networks .createdby p {
+  color: rgb(155, 153, 153);
+  letter-spacing: 1px;
+}
+/* Footer Section Styles */
