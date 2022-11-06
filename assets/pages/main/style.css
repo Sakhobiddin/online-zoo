@@ -8,84 +8,71 @@ body {
   font-family: "SF Pro Display", sans-serif;
 }
 
-/* Nav styles */
-.wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
-  background: #000;
+html {
+  overflow-x: hidden;
 }
+
+/* Header Styles */
 header {
-  position: relative;
-  z-index: 2;
-}
-header .wrapper {
-  padding-top: 14px;
-  padding-bottom: 14px;
+  width: 1600px;
+  background-color: #000;
+  min-height: 80px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
-.logo {
-  width: 82px;
-  font-weight: 400;
-  font-size: 1.9rem;
-  line-height: 120%;
-  line-height: 23px;
-  display: inline-block;
-  padding: 2px;
-  position: relative;
-}
-.logo:before {
-  position: absolute;
-  left: 12px;
-  bottom: 6px;
-  content: "";
-  width: 7px;
-  height: 21px;
-  display: inline-block;
-}
-.burger_icon {
-  display: none;
-}
-.menu {
-  flex: 1;
-}
-.menu_body {
-  flex: 1;
+
+header .navbar {
   display: flex;
+  align-items: center;
+  width: 1160px;
   justify-content: space-between;
-  margin-left: 63px;
+  margin: 0 auto;
+  z-index: 100;
 }
-.menu_body ul {
+
+.navbar nav {
+  margin: 0 10px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
-.menu_body ul li {
+
+.navbar nav .logo {
+  text-align: center;
+}
+
+.navbar nav ul {
+  display: flex;
+}
+
+.navbar ul li {
   list-style: none;
+  padding: 0 25px;
+  font-size: 24px;
 }
 
-.menu_body .active-menu-item {
-  color: orange;
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 19px;
 }
-.menu_body ul li a {
-  font-weight: 500;
-  margin-right: 58px;
+
+.navbar ul li a:hover {
+  color: #fb8634;
+  transition: all 0.4s linear;
+}
+
+.navbar ul li .active {
+  color: #fb8634;
+}
+
+.navbar .covered h4 a {
   text-decoration: none;
   color: #fff;
-}
-.menu-right h4 a {
-  text-decoration: none;
-  color: #fff;
-}
-.menu_body li:last-of-type a {
-  margin-right: 0;
+  font-size: 17px;
 }
 
-.menu_body ul li a:hover {
-  color: orange;
-}
-
-/* Header section ended */
+/* Header Styles */
 
 /* Styles Main section */
 
@@ -93,12 +80,12 @@ header .wrapper {
   background-image: url("../../images/Panda.png");
   background-size: cover;
   background-position: center;
-  width: 100%;
+  width: 1600px;
   height: 90vh;
 }
 
 .main-section .main-details {
-  position: absolute;
+  position: relative;
   top: 20%;
   left: 50%;
   background-color: #fb8634;
@@ -141,7 +128,7 @@ header .wrapper {
 
 /* Style Main section ended */
 .section-two {
-  width: 100%;
+  width: 1600px;
   position: relative;
 }
 
@@ -150,8 +137,8 @@ header .wrapper {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 197%;
-  left: 3%;
+  top: 57%;
+  left: 8%;
   background-color: #fb8634;
   color: aliceblue;
   padding: 5px;
@@ -171,8 +158,8 @@ header .wrapper {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 197%;
-  right: 3%;
+  top: 57%;
+  right: 8%;
   background-color: #fb8634;
   color: aliceblue;
   padding: 5px;
@@ -188,7 +175,7 @@ header .wrapper {
 }
 
 .section-two .section-details {
-  width: 85%;
+  width: 1160px;
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
@@ -198,11 +185,11 @@ header .wrapper {
 .section-two .corner-flower {
   position: absolute;
   top: -12px;
-  right: -10px;
+  right: 60px;
 }
 
 .section-two .corner-flower img {
-  height: 60vh;
+  height: 50vh;
 }
 
 .section-two .section-details .images {
@@ -244,11 +231,10 @@ header .wrapper {
 
 /* Animals card section */
 .zoo-animals-cards {
-  /* top: 90px; */
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 85%;
+  width: 1160px;
   margin: 0 auto;
 }
 
@@ -334,12 +320,13 @@ header .wrapper {
       #eaf7fe 149.54%
     );
   opacity: 0.9;
+  width: 1600px;
 }
 
 .pick-feed .pick-section {
   background: rgba(253, 253, 255, 0.52);
   padding: 45px 140px;
-  width: 95%;
+  width: 1160px;
   margin: 20px auto;
   border-radius: 10px;
 }
@@ -439,7 +426,7 @@ header .wrapper {
 /* Testimonial */
 
 .testimonials {
-  width: 100%;
+  width: 1600px;
   padding: 40px;
   position: relative;
 }
@@ -456,7 +443,7 @@ header .wrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 90%;
+  width: 1160px;
   margin: 20px auto;
 }
 
@@ -569,7 +556,7 @@ header .wrapper {
 }
 
 .testimonials .btn {
-  margin-left: 65px;
+  margin-left: 180px;
 }
 
 .testimonials .btn button:hover {
@@ -590,12 +577,12 @@ header .wrapper {
 /* Footer Section Styles */
 footer {
   background: #000;
-  width: 100%;
+  width: 1600px;
   padding: 30px;
 }
 
 footer .footer {
-  width: 90%;
+  width: 1160px;
   margin: 20px auto;
 }
 
