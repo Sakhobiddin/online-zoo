@@ -6,32 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Font awesome link -->
     <link
+      href="http://fonts.cdnfonts.com/css/sf-pro-display"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <!-- Css link -->
     <link rel="stylesheet" href="./style.css" />
-
     <title>Donate Page</title>
   </head>
   <body>
     <!-- Header section -->
-    <header>
+     <header>
+      <div class="menu">
+        <div class="logo">
+          <a href="#"
+            ><img src="../../images/logo.png" alt="online-zoo-logo"
+          /></a>
+        </div>
+        <i class="fa-solid fa-bars menu-bars"></i>
+        <i class="fa-solid fa-x menu-x"></i>
+      </div>
+
       <div class="navbar">
         <nav>
           <div class="logo">
-            <a href="#main"
+            <a href="#"
               ><img src="../../images/logo.png" alt="online-zoo-logo"
             /></a>
           </div>
           <ul>
-            <li><a href="../main/index.html">About</a></li>
+            <li><a class="active" href="#about">About</a></li>
             <li><a href="#">Map</a></li>
             <li><a href="#">Zoos</a></li>
-            <li><a class="active" href="#main">Donate</a></li>
+            <li><a href="../donate/donate.html">Donate</a></li>
             <li><a href="#">Contact us</a></li>
           </ul>
         </nav>
@@ -41,19 +47,17 @@
             <a
               href="https://www.figma.com/file/CNENFvlFWlqjyMTyRQwTsp/online-zoo-3-weeks-(Copy)?node-id=0%3A1"
               target="_blank"
-              >Designed by &copy;</a
-            >
+              >Designed by &copy;</a>
           </h4>
         </div>
       </div>
-    </header>
 
     <!-- HEADER SECTION ENDED -->
-
     <!-- Main page -->
     <div class="main-page"></div>
     <!-- Main page ended -->
     <!-- Donate info -->
+
     <div class="bg-donate">
       <div class="main-info">
         <h1>THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h1>
@@ -154,8 +158,10 @@
           </div>
         </div>
       </div>
+
     <!-- FOOTER SECTION STARTED -->
-    <footer>
+
+    <!-- <footer>
       <div class="footer">
         <div class="footer-head">
           <div class="logo-img">
@@ -201,9 +207,10 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
     <!-- FOOTER SECTION ENDED -->
     <!-- Script link -->
-    <script src="./script.js"></script>
+    <script src="../donate/script.js"></script>
   </body>
 </html>
